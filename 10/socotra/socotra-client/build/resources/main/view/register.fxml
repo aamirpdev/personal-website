@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="socotra.controller.RegisterController"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <children>
+        <Label layoutX="82.0" layoutY="100.0" text="Username:"/>
+        <TextField fx:id="usernameField" layoutX="172.0" layoutY="95.0"/>
+
+        <Label layoutX="82.0" layoutY="160.0" text="New Password:"/>
+        <PasswordField fx:id="passwordField" layoutX="172" layoutY="160.0"/>
+
+        <Button defaultButton="true" onAction="#registerNewAccount" fx:id="registerButton" layoutX="150" layoutY="300"
+                mnemonicParsing="false"
+                text="Create new account"/>
+    </children>
+</AnchorPane>
